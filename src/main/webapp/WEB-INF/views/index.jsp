@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./libs/bootstrap-css-only/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="webjars/bootstrap-css-only/3.3.4/css/bootstrap.css" />
   </head>
   <body ng-app="myApp">
     <div class="container" ng-controller="AppController">
@@ -35,11 +35,11 @@
           </span>
         </div>
       </form>
-    </div>
-    <script type="text/javascript" src="./libs/angular/angular.min.js"></script>
-    <script type="text/javascript" src="./libs/angular-resource/angular-resource.min.js"></script>
-    <script type="text/javascript" src="./libs/angular-spring-data-rest/dist/angular-spring-data-rest.min.js"></script>
-    <script type="text/javascript" src="./libs/lodash/dist/lodash.min.js"></script>
+	</div>
+    <script type="text/javascript" src="webjars/angular/1.4.6/angular.js"></script>
+    <script type="text/javascript" src="webjars/angular-resource/1.4.6/angular-resource.js"></script>
+    <script type="text/javascript" src="webjars/angular-spring-data-rest/0.4.2/dist/angular-spring-data-rest.js"></script>
+    <script type="text/javascript" src="webjars/lodash/3.10.1/lodash.js"></script>
     <script type="text/javascript" src="./app/app.js"></script>
     <script type="text/javascript" src="./app/controllers.js"></script>
     <script type="text/javascript" src="./app/services.js"></script>

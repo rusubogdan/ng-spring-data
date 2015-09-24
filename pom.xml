@@ -47,11 +47,50 @@
 			<artifactId>hsqldb</artifactId>
 			<version>2.3.2</version>
 		</dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
-      <scope>provided</scope>
-    </dependency>
+		
+		<!-- front-end bower dependencies -->
+		<dependency>
+			<!-- webjars/angularjs/1.4.6/angular.js -->
+		    <groupId>org.webjars.bower</groupId>
+		    <artifactId>angular</artifactId>
+		    <version>1.4.6</version>
+		</dependency>
+		<dependency>
+			<!-- webjars/angular-resource/1.4.6/angular-resource.js -->
+		    <groupId>org.webjars.bower</groupId>
+		    <artifactId>angular-resource</artifactId>
+		    <version>1.4.6</version>
+		</dependency>
+		<dependency>
+			<!-- webjars/angular-spring-data-rest/0.4.2/dist/angular-spring-data-rest.js -->
+		    <groupId>org.webjars.bower</groupId>
+		    <artifactId>angular-spring-data-rest</artifactId>
+		    <version>0.4.2</version>
+		    <exclusions>
+		    	<exclusion><groupId>org.webjars.bower</groupId><artifactId>angular</artifactId></exclusion>
+		    	<exclusion><groupId>org.webjars.bower</groupId><artifactId>angular-resource</artifactId></exclusion>
+		    </exclusions>
+		</dependency>
+		<dependency>
+			<!-- webjars/bootstrap-css-only/3.3.4/css/bootstrap.css -->
+		    <groupId>org.webjars.bower</groupId>
+		    <artifactId>bootstrap-css-only</artifactId>
+		    <version>3.3.4</version>
+		</dependency>
+		<dependency>
+			<!--webjars/lodash/3.10.1/lodash.js-->
+		    <groupId>org.webjars.bower</groupId>
+		    <artifactId>lodash</artifactId>
+		    <version>3.10.1</version>
+		</dependency>
+		
+		
+    	<dependency>
+	      <groupId>javax.servlet</groupId>
+	      <artifactId>javax.servlet-api</artifactId>
+	      <version>3.1.0</version>
+	      <scope>provided</scope>
+    	</dependency>
+    	
 	</dependencies>
 </project>
