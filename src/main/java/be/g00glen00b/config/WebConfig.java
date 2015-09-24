@@ -3,7 +3,6 @@ package be.g00glen00b.config;
 import org.springframework.context.annotation.*;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.mvc.WebContentInterceptor;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
