@@ -8,18 +8,18 @@
       new Item({
         description: description,
         checked: false
-      }).save(function(item) {
+      }).$save(function(item) {
         $scope.items.push(item);
       });
       $scope.newItem = "";
     };
     
     $scope.updateItem = function(item) {
-      item.save();
+      item.$update();
     };
     
     $scope.deleteItem = function(item) {
-      item.remove(function() {
+      item.$remove(function() {
         $scope.items.splice($scope.items.indexOf(item), 1);
       });
     };

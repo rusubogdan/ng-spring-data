@@ -1,11 +1,13 @@
 package be.g00glen00b.config;
 
 import org.springframework.context.annotation.*;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.mvc.WebContentInterceptor;
 
 @Configuration
 @EnableWebMvc
+@EnableTransactionManagement
 @ComponentScan(basePackages = "be.g00glen00b.controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
