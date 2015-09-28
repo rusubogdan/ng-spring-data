@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>be.g00glen00b</groupId>
+	<groupId>nl.tubby</groupId>
 	<artifactId>ng-spring-data</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spring web application using AngularJS and Spring data REST</name>
-	<url>http://g00glen00b.be/spring-data-rest-angular</url>
+	<name>Spring Web Application using AngularJS and Spring Data JPA and REST</name>
+	<url>https://github.com/tubbynl/ng-spring-data</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -92,6 +92,5 @@
 	      <version>3.1.0</version>
 	      <scope>provided</scope>
     	</dependency>
-    	
 	</dependencies>
 </project>

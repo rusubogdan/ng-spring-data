@@ -1,4 +1,4 @@
-package be.g00glen00b.model;
+package nl.tubby.model;
 
 import javax.persistence.*;
 

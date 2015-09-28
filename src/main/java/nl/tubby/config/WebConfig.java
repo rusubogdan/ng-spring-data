@@ -1,4 +1,4 @@
-package be.g00glen00b.config;
+package nl.tubby.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -8,7 +8,7 @@ import org.springframework.web.servlet.mvc.WebContentInterceptor;
 @Configuration
 @EnableWebMvc
 @EnableTransactionManagement
-@ComponentScan(basePackages = "be.g00glen00b.controller")
+@ComponentScan(basePackages = "nl.tubby.controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override
@@ -28,7 +28,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         interceptor.setUseExpiresHeader(true);
         interceptor.setUseCacheControlHeader(true);
         interceptor.setUseCacheControlNoStore(true);
-
         return interceptor;
     }
 

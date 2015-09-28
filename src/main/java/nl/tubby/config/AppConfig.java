@@ -1,4 +1,4 @@
-package be.g00glen00b.config;
+package nl.tubby.config;
 
 import static org.hibernate.cfg.AvailableSettings.HBM2DDL_AUTO;
 
@@ -14,8 +14,8 @@ import org.springframework.orm.jpa.vendor.*;
 import org.springframework.web.bind.annotation.RestController;
 
 @Configuration
-@EnableJpaRepositories(basePackages = { "be.g00glen00b.repository" })
-@ComponentScan(basePackages = "be.g00glen00b", excludeFilters = { @ComponentScan.Filter(value = RestController.class, type = FilterType.ANNOTATION),
+@EnableJpaRepositories(basePackages = { "nl.tubby.repository" })
+@ComponentScan(basePackages = "nl.tubby", excludeFilters = { @ComponentScan.Filter(value = RestController.class, type = FilterType.ANNOTATION),
         @ComponentScan.Filter(value = Configuration.class, type = FilterType.ANNOTATION) })
 public class AppConfig {
 
@@ -37,7 +37,7 @@ public class AppConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() throws ClassNotFoundException {
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setDataSource(dataSource());
-        factoryBean.setPackagesToScan("be.g00glen00b.model");
+        factoryBean.setPackagesToScan("nl.tubby.model");
         factoryBean.setJpaVendorAdapter(jpaVendorAdapter());
         factoryBean.setJpaProperties(jpaProperties());
 
