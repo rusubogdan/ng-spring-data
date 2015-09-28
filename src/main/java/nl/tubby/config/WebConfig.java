@@ -24,10 +24,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Bean
     public WebContentInterceptor webContentInterceptor() {
         WebContentInterceptor interceptor = new WebContentInterceptor();
-        interceptor.setCacheSeconds(0);
-        interceptor.setUseExpiresHeader(true);
-        interceptor.setUseCacheControlHeader(true);
-        interceptor.setUseCacheControlNoStore(true);
+        interceptor.setCacheSeconds(0);//"Cache-Control: no-store" will prevent caching
         return interceptor;
     }
 
@@ -35,7 +32,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/lib/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
         registry.addResourceHandler("/app/**").addResourceLocations("/app/");
-        registry.addResourceHandler("/assets/**").addResourceLocations("/assets/");
     }
 
     @Override

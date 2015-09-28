@@ -25,12 +25,12 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
+			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
+			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
@@ -59,14 +59,9 @@
 			<version>2.3.2</version>
 		</dependency>
 		
-		<!-- front-end bower dependencies -->
+		<!-- front-end dependencies -->
 		<dependency>
 			<!-- webjars/angularjs/1.4.6/angular.js -->
-		    <groupId>org.webjars.bower</groupId>
-		    <artifactId>angular</artifactId>
-		    <version>1.4.6</version>
-		</dependency>
-		<dependency>
 			<!-- webjars/angular-resource/1.4.6/angular-resource.js -->
 		    <groupId>org.webjars.bower</groupId>
 		    <artifactId>angular-resource</artifactId>
@@ -78,13 +73,6 @@
 		    <artifactId>bootstrap-css-only</artifactId>
 		    <version>3.3.4</version>
 		</dependency>
-		<dependency>
-			<!--webjars/lodash/3.10.1/lodash.js-->
-		    <groupId>org.webjars.bower</groupId>
-		    <artifactId>lodash</artifactId>
-		    <version>3.10.1</version>
-		</dependency>
-		
 		
     	<dependency>
 	      <groupId>javax.servlet</groupId>
