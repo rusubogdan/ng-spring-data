@@ -21,6 +21,7 @@ public class ItemDaoImpl implements ItemDao {
     private EntityManager entityManager;
 
     @Override
+    @Transactional(readOnly = true)
     public List<Item> findAll() {
         CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
         CriteriaQuery<Item> cq = cb.createQuery(Item.class);
