@@ -6,14 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import nl.tubby.model.Item;
-import nl.tubby.repository.ItemRepository;
+import nl.tubby.repository.ItemDao;
 
 @RestController
 @RequestMapping("/items")
 public class ItemController {
 
     @Autowired
-    private ItemRepository repo;
+    private ItemDao repo;
 
     @RequestMapping(method = RequestMethod.GET)
     public List<Item> findItems() {
